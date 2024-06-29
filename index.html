@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .row{
+        display: flex;
+    }
+    .col{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 70px;
+        border: 1px solid black;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .player-x{
+        color:rgb(8, 90, 132)
+    }
+    .player-o{
+        color: brown;
+    }
+</style>
+<body>
+    <div class="grid">
+        <div class="row">
+            <div onclick="handleclick(this)" id="0" class="col"></div>
+            <div onclick="handleclick(this)" id="1" class="col"></div>
+            <div onclick="handleclick(this)" id="2" class="col"></div>
+        </div>
+        <div class="row">
+            <div id="3" onclick="handleclick(this)" class="col"></div>
+            <div id="4" onclick="handleclick(this)" class="col"></div>
+            <div id="5" onclick="handleclick(this)" class="col"></div>
+        </div>
+        <div class="row">
+            <div id="6" onclick="handleclick(this)" class="col"></div>
+            <div id="7" onclick="handleclick(this)" class="col"></div>
+            <div  id="8" onclick="handleclick(this)" class="col"></div>
+        </div>
+    </div>
+    
+</body>
+<script src="index.js"></script>
+</html>
